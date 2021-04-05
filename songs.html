@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="C:\Users\ankit\Desktop\New\style.css">
+</head>
+
+<body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!------The Tooltip plugin is small pop-up box that appears--------->
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <!--------------------------------------------------------------------------------------->
+  <!---------Navigation Bar------------------------------------------------->
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand mr-auto" href="#"><img src="C:\Users\ankit\Desktop\New\Images\BTS_logo.png" height="40"
+          width="41"></a>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html"><span class="fa fa-info fa-lg"></span> About</a>
+          </li>
+          <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Songs</a></li>
+          <li class="nav-item"><a class="nav-link" href="./concert.html"><span class="fa fa-map-pin fa-lg"></span>
+              Concert</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html"><span class="fa fa-address-card fa-lg"></span>
+              Contact</a></li>
+        </ul>
+        <!-------------------------------------------->
+        <span class="navbar-text">
+          <a data-toggle="modal" data-target="#loginModal">
+              <span class="fa fa-sign-in fa-lg"></span> Login
+          </a>
+        </span>
+
+        <!----------------------------------------------->
+      </div>
+    </div>
+  </nav>
+<!-----------------------------Login Section-------------------------------------------------------->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-sm-4">
+                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                      placeholder="Enter email">
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                    <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                      placeholder="Password">
+                  </div>
+                  <div class="col-sm-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label"> Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  <!-----------------------------Header Section---------------------------------------------------------->
+  <header class="jumbotron">
+    <div class="container">
+      <div class="row row-header">
+        <div class="col-12 col-sm-6">
+          <h1>BTS</h1>
+          <p><strong>Bangtan Sonyeondan (BTS)</strong>(Korean: 방탄소년단)<br>
+            <strong>Seven-member South Korean</strong> boy-band<br>
+            <strong>Biggest boy-band</strong> in the world today.<br>
+            Debuted in 2013 under <strong>Big Hit Entertainment.</strong><br>
+            <strong>Grammy</strong> Nominated Artists 2021
+          </p>
+        </div>
+        <!------------------Logo Section---------------------->
+
+        <div class="col-12 col-sm align-self-center">
+          <img src="C:\Users\ankit\Desktop\New\Images\BTS_logo.png" class="img-fluid">
+
+        </div>
+        <!---------------------------------------------------->
+      </div class="col-12 col-sm">
+    </div>
+  </header>
+  <!----------------------------------------------------------------------------------------------------->
+
+  <div class="container">
+    <!-----------Breadcrumb Section---------------->
+    <ol class="col-12 breadcrumb">
+      <li class="breadcrumb-item"><a href=".new.html">Home</a></li>
+      <li class="breadcrumb-item active">Songs</li>
+    </ol>
+    <!--------------------------------------------->
+
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-sm-12">
+        <h3>Songs</h3>
+      </div>
+      <div class="col-12 col-sm-6">
+        <h2>What is BTS all about?</h2>
+        <p>Songs typically revolve around romance, partying and, on occasion, friendship and daily life. But tracks with
+          underlying socio-economic and political meaning exist, and BTS is one act that regularly incorporates
+          criticism of South Korean society into their music.
+          BTS began its formation in 2010 after Big Hit Entertainment CEO Bang Si-hyuk met with group leader RM and was
+          impressed with his rapping. ... The lineup was then finalized with Jin, Suga, J-Hope, RM, Jimin, V, and
+          Jungkook in 2012.
+          BTS's music is also a success because of the subject of their music. While many K-pop songs are about
+          relationships and love, BTS covers subjects that other bands may not like bullying, elitism, and mental
+          health. Their ability to be relatable, humble while still being entertaining is rare.</p>
+      </div>
+
+
+      <!---------------------Adding a card--------------------------------->
+
+
+      <div class="col-sm">
+        <div class="card">
+          <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+          <div class="card-body">
+            <dl class="row">
+              <dt class="col-4">Started</dt>
+              <dd class="col-4">3 Feb. 2013</dd>
+              <dt class="col-4">Major Stake Holder</dt>
+              <dd class="col-4">HK Fine Foods Inc.</dd>
+              <dt class="col-4">Last Year's Turnover</dt>
+              <dd class="col-6">$1,250,375</dd>
+              <dt class="col-6">Employees</dt>
+              <dd class="col-6">40</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-------Bootstrap card and include a quotation in the card-------------------->
+
+
+      <div class="col-12">
+        <div class="card card-body bg-light">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Our Time Together Now is the Happiest and Most Wonderful Time of Our Lives." </p>
+            <footer class="blockquote-footer">BTS,
+              <cite title="Source Title">"WooRi HamKkaeHaNeun JiGeum, HwaYangYeonHwa." </cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+
+
+    </div>
+    <!-------------------------------------------------------------------------------->
+
+    <div class="container">
+      <div class="row row-content">
+        <div>
+          <button type="button" class="btn btn-info">
+            <h2>BTS Members</h2>
+          </button>
+
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#rm" role="tab" data-toggle="tab">RM, Leader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jin" role="tab" data-toggle="tab">Jin, Vocalist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#suga" role="tab" data-toggle="tab">Suga, Rapper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#j-hope" role="tab" data-toggle="tab">J-Hope, Rapper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jimin" role="tab" data-toggle="tab">Jimin, Vocalist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#v" role="tab" data-toggle="tab">V, Vocalist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jungkook" role="tab" data-toggle="tab">Jungkook, Vocalist</a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade show active" id="rm">
+              <h3>RM <small>Leader</small></h3>
+              <p class="d-none d-sm-block">Kim Nam-joon, better known by his stage name RM, is a South Korean rapper,
+                songwriter, and record producer. He is the leader of the South Korean boy group BTS. In 2015, he
+                released his first solo mixtape, RM.</p>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="jin">
+              <h3>Jin <small>Vocalist</small></h3>
+              <p class="d-none d-sm-block">Kim Seok-jin, also known by his stage name Jin, is a South Korean singer,
+                songwriter, and member of the South Korean boy band BTS since June 2013. Kim has co-written and
+                released three solo tracks with BTS: "Awake", "Epiphany", and "Moon", all of which have charted
+                on South Korea's Gaon Digital Chart.</p>
+
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="suga">
+              <h3>Suga <small>Rapper</small></h3>
+              <p class="d-none d-sm-block">Min Yoon-gi, better known by his stage names Suga and Agust D, is a South
+                Korean rapper, songwriter and record producer. Managed by Big Hit Entertainment, he debuted as a member
+                of the South Korean pop idol group BTS in 2013. </p>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="j-hope">
+              <h3>J-Hope <small>Rapper</small></h3>
+              <p class="d-none d-sm-block">Jung Ho-seok, better known by his stage name J-Hope, is a South Korean
+                rapper,
+                songwriter, dancer, and record producer. In 2013, J-Hope made his debut as a member of South Korean boy
+                band BTS, managed under Big Hit Entertainment. J-Hope released his first solo mixtape, Hope World,
+                worldwide on March 1, 2018.</p>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="jimin">
+              <h3>Jimin <small>Vocalist</small></h3>
+              <p class="d-none d-sm-block">Park Ji-min, better known mononymously as Jimin, is a South Korean singer,
+                songwriter, and dancer. In 2013, he debuted as a member of the South Korean boy band BTS, under the
+                record label Big Hit Entertainment.</p>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="v">
+              <h3>V <small>Vocalist</small></h3>
+              <p class="d-none d-sm-block">Kim Tae-hyung, also known by his stage name V, is a South Korean singer,
+                songwriter, and actor. He is a vocalist of the South Korean boy group BTS.</p>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="jungkook">
+              <h3>Jungkook <small>Vocalist</small></h3>
+              <p class="d-none d-sm-block">Jeon Jung-kook, better known mononymously as Jungkook, is a South Korean
+                singer and songwriter. He is the youngest member of and vocalist in the South Korean boy band BTS.</p>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <!---------------------Famous song Section--------------------->
+      <div class="row row-content  align-items-center">
+        <div>
+          <button type="button" class="btn btn-info">
+            <h2>BTS Famous Songs</h2>
+          </button>
+
+
+          <!-------Collapse Section------------------>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" role="tab" id="dynamitehead">
+                <h3 class="mb-0">
+                  <a data-toggle="collapse" data-target="#dynamite">
+                    Dynamite <small>2020</small>
+                  </a>
+                </h3>
+              </div>
+              <div class="collapse show" id="dynamite" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block"><strong>Artist</strong>: BTS<br>
+                    <strong>Album</strong>: Dynamite (Day Time Version)<br>
+                    <Strong>About</strong>:"Dynamite" is a song recorded by South Korean boy band BTS, released on
+                    August 21, 2020, through Big Hit Entertainment and Sony
+                    Music Entertainment.<br>
+                    <strong>Released</strong>: 2020<br>
+                    <strong>Nominations</strong>: Grammy Award for Best Pop Duo/Group Performance<br>
+                    <strong>Awards</strong>: MTV Europe Music Award for Best Song,<strong> MORE</strong><br>
+                    <strong>Genres</strong>: Disco, Pop<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="dnahead">
+                <h3 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-target="#dna">
+                    DNA <small>2017</small>
+                  </a>
+                </h3>
+              </div>
+              <div class="collapse" id="dna" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block"><strong>Artist</strong>: BTS CTS<br>
+                    <strong>Album</strong>: Love Yourself: Her<br>
+                    <strong>About</strong>:The video surpassed one billion views, becoming BTS' first music video to do
+                    so. It also became the first music video by a K-pop
+                    boy band to attain the milestone.<br>
+                    <strong>Released</strong>: 2017<br>
+                    <strong>Nominations</strong>: Radio Disney Music Award for Best Song that Makes You Smile<br>
+                    <strong>Awards</strong>: Mnet Asian Music Award for Song of the Year, Mnet Asian Music Award for
+                    Best Dance Performance - Male Group,<strong> MORE</strong><br>
+                    <strong>Genres</strong>: Hip-Hop/Rap<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="boywithluvhead">
+                <h3 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-target="#boywithluv">
+                    Boy with Luv <small>2019</small>
+                  </a>
+                </h3>
+              </div>
+              <div class="collapse" id="boywithluv" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block"><strong>Artist</strong>: BTS <br>
+                    <strong>Featured artist</strong>: Halsey<br>
+                    <strong>Album</strong>: MAP OF THE SOUL: PERSONA<br>
+                    <strong>About</strong>:It was released on April 12, 2019 by Big Hit Entertainment. The song's music
+                    video was the most viewed online music video in 24 hours
+                    at the time, garnering over 74.6 million views within its first day of release.<br>
+
+                    <strong>Released</strong>: 2019<br>
+                    <strong>Nominations</strong>: MTV Video Music Award for Best Choreography,<strong> MORE</strong><br>
+                    <strong>Awards</strong>: MTV Video Music Award for Best K-Pop,<strong> MORE</strong><br>
+                    <strong>Genres</strong>: Hip-Hop/Rap<br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="bluegreyhead">
+                <h3 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-target="#bluegrey">
+                    Blue & Grey <small>2021</small>
+                  </a>
+                </h3>
+              </div>
+              <div class="collapse" id="bluegrey" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block"><strong>Artist</strong>: BTS <br>
+                    <strong>Album</strong>: BE<br>
+                    <strong>About</strong>: "Blue & Grey" is a song by South Korean boy band BTS from their fifth
+                    Korean-language studio album, Be (2020) through Big Hit Entertainment.<br>
+                    <strong>Songwriter(s)</strong>:Park Ji-soo Levi V Hiss Noise Suga RM J-Hope Metaphor<br>
+                    <strong>Released</strong>: 2020<br>
+                    <strong>Genres</strong>: K-pop, Pop<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------->
+
+
+    <!---------------------------------------------------------------------------------->
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-sm-4 col-md-3">
+        <h3>About Album</h3>
+      </div>
+      <div class="col col-sm col-md">
+
+        <!---------------Adding Media Obejects----------------------------->
+        <div class="media">
+          <div class="media-body">
+            <h2 class="mt-0">BE</h2>
+            <p class="d-none d-lg-block">BTS's New Story [BE]
+              Consolation from BTS to all who live in the'Corona 19 Era'
+              Bulletproof Boy Scouts actively participate in the entire album, from song work to composition, concept,
+              design, and music video
+
+              Group BTS will release a new album [BE (Deluxe Edition)] on November 20th. Last February, the 4th regular
+              album [MAP OF THE SOUL: 7]
+              containing the story to find the'perfect me' and last August, spreading the message of vitality and hope
+              to the world, topped the US
+              Billboard main chart'Hot 100'.</p>
+          </div>
+          <img class="d-flex mr-3 img-thumnail align-self-center"
+            src="C:\Users\ankit\Desktop\New\Images\Wings-Wings.png" height="180" width="190" alt="Wings-Wings">
+        </div>
+        <!---------------------------------------------------------------->
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------->
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-sm-4 order-sm-last col-md-3">
+        <h3>Best Song</h3>
+      </div>
+      <div class="col col-sm order-sm-first col-md">
+
+
+        <!---------------Adding Media Obejects----------------------------->
+        <div class="media">
+          <img class="d-flex mr-3 img-thumnail align-self-center"
+            src="C:\Users\ankit\Desktop\New\Images\Blue_&_grey.png" height="180" width="190" alt="Grey & Blue">
+          <div class="media-body">
+            <h2 class="mt-0">Blue & Grey <span class="badge badge-danger">HOT</span>
+              <span class="badge bagde-pill badge-secondary">$25.99</span>
+            </h2>
+            <p class="d-none d-lg-block">It is an emotional pop ballad genre centered on acoustic guitar sound, and is a
+              song full of the color and charm of V who participated
+              in the lyrics and composition. The lyrics express inner depression and anxiety in blue and gray, bringing
+              out the sympathy of the
+              listeners. The acoustic guitar player takes the center of the song, and the vocal Humming in the second
+              half raises the emotions
+              of the song. </p>
+          </div>
+        </div>
+        <!---------------------------------------------------------------->
+
+
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------->
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-sm-4 col-md-3">
+        <h3>Highlight</h3>
+      </div>
+      <div class="col col-sm col-md">
+
+        <!---------------Adding Media Obejects----------------------------->
+        <div class="media">
+          <div class="media-body">
+            <h2 class="mt-0">Dynamite</h2>
+            <h4>Bulletproof Boy Scouts</h4>
+            <p class="d-none d-lg-block">On August 21, 2020, BTS' first digital single, which was simultaneously
+              released worldwide, was published in this album. It is a disco
+              pop genre that adds joyful and dynamic performance to an exciting rhythm with a strong addiction, and is a
+              song that shines at No. 1
+              on Billboard's'Hot 100' in the United States. The lyrics talk about the preciousness of life and the
+              speciality of life through the
+              moments of small daily life, and contain the wishes of BTS that they want to spread a message of vitality
+              and hope in times when
+              everyone has a hard time with Corona 19.</p>
+          </div>
+          <img class="d-flex mr-3 img-thumnail align-self-center" src="C:\Users\ankit\Desktop\New\Images\Dynamite.png"
+            height="180" width="190" alt="Dynamite">
+        </div>
+        <!---------------------------------------------------------------->
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------------------------------------------->
+  <footer class="footer">
+    <div class="container">
+      <div class="row row-content">
+        <div class="col-4 offset-1 col-sm-2 align-self-center">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-7 col-sm-5 align-self-center">
+          <h5>Our Address</h5>
+          <address>
+            122,Clear Water Bay Road<br>
+            Claer Water Bay,Kowloon<br>
+            Seoul<br>
+            <i class="fa fa-phone fa-lg"></i> : +876 5679 3452<br>
+            <i class="fa fa-fax fa-lg"></i> : +765 9876 5643<br>
+            <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:confusion@bts.net">Contact us at</a>
+          </address>
+        </div>
+
+        <div class="col-12 col-sm-4 align-self-center">
+          <div class="text-center">
+            <a class="btn btn-social-icon btn-google" href="mailto:confusion@bts.net"><i
+                class="fa fa-google-plus fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-facebook" href="mailto:confusion@bts.net"><i
+                class="fa fa-facebook fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="mailto:confusion@bts.net"><i
+                class="fa fa-linkedin fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="mailto:confusion@bts.net"><i
+                class="fa fa-twitter fa-lg"></i></a>
+            <a class="btn btn-social-icon btn-youtube" href="mailto:confusion@bts.net"><i
+                class="fa fa-youtube fa-lg"></i></a>
+            <a class="btn btn-social-icon" href="mailto:confusion@bts.net"><i class="fa fa-envelope-open fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-header justify-content-center">
+        <div class="col-auto">
+          <p>@ Copyright 2015 BTS</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

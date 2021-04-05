@@ -1,0 +1,20 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "This is a fanpage",
+  "main": "index.js",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": ": \u0016\u0016(https://github.com/Ankitaraj006/BTS-Fan-page.git)"
+  },
+  "author": "Ankita Raj",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

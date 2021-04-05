@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\ankit\Desktop\New\style.css">
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        
+    <!------The Tooltip plugin is small pop-up box that appears--------->
+    <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+    </script>
+
+    <!--------------------------------------------------------------------------------------->
+    <!---------Navigation Bar------------------------------------------------->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand mr-auto" href="./new.html"><img src="C:\Users\ankit\Desktop\New\Images\BTS_logo.png"
+                    height="40" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./new.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html"><span class="fa fa-info fa-lg"></span>
+                            About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./songs.html"><span class="fa fa-list fa-lg"></span>
+                            Songs</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span
+                                class="fa fa-map-pin fa-lg"></span> Concert</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html"><span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+                <!-------------------------------------------->
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in fa-lg"></span> Login
+                    </a>
+                </span>
+  
+                <!----------------------------------------------->
+            </div>
+        </div>
+    </nav>
+    <!-----------------------------Login Section-------------------------------------------->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-sm-4">
+                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                      placeholder="Enter email">
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                    <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                      placeholder="Password">
+                  </div>
+                  <div class="col-sm-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label"> Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!--------------------------------------------------------------------------------------->
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-2 col-md-6">
+                    <h1>BTS</h1>
+                    <p><strong>Bangtan Sonyeondan (BTS)</strong>(Korean: 방탄소년단)<br>
+                        <strong>Seven-member South Korean</strong> boy-band<br>
+                        <strong>Biggest boy-band</strong> in the world today.<br>
+                        Debuted in 2013 under <strong>Big Hit Entertainment.</strong><br>
+                        <strong>Grammy</strong> Nominated Artists 2021
+                    </p>
+                </div>
+                <!------------------Logo Section---------------------->
+
+                <div class="col-12 col-sm-2 col-md-2mx-auto align-self-center">
+                    <img src="C:\Users\ankit\Desktop\New\Images\BTS_logo.png">
+                </div>
+
+                <div class="col-12 col-sm-3 mx-auto align-self-center">
+                    <a role="button" class="btn btn-block nav-link btn-warning"
+                        data-toggle="tooltip" data-html="true"  title="Or Call us at <br><strong> +852 12345678</strong>"
+                        data-placement="bottom" href="#concertticket">Book Concert Tickets
+                    </a>
+                </div>
+                <!---------------------------------------------------->
+                </div">
+            </div>
+    </header>
+    <!---------------------------------Header Section (ends)--------------------------->
+
+
+    <div class="container">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a href=".new.html">Home</a></li>
+            <li class="breadcrumb-item active">Concert</li>
+        </ol>
+
+        <!-------------------------------------------------------------------------------->
+        <div id="concertticket" class="row row-content align-items-center">
+            <div class="col-12 offset-sm-2 col-sm-8 align-items-center">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Book Concert Tickets</h3>
+                    <div class="card-body">
+                        <form>
+                            <!---------------------------------Number of Guests (Column)-------------------------------->
+                            <div class="form-group row">
+                                <label for="numguests" class="col-12 col-sm-2 col-form-label">Number of Tickets</label>
+                                <div class="col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numguests1" name="numguests">
+                                        <label type="radio" class="form-check-label" for="numguests1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numguests2" name="numguests">
+                                        <label type="radio" class="form-check-label" for="numguests2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numguests3" name="numguests">
+                                        <label type="radio" class="form-check-label" for="numguests3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numguests4" name="numguests">
+                                        <label type="radio" class="form-check-label" for="numguests4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numguests5" name="numguests">
+                                        <label type="radio" class="form-check-label" for="numguests5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numguests6" name="numguests">
+                                        <label type="radio" class="form-check-label" for="numguests6">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------Date and Time (Column)-------------------------------->
+                            <div class="form-group row">
+                                <label for="datentime" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="rsrvdate" name="datentime"
+                                        placeholder="Date">
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="rsrvtime" name="datentime"
+                                        placeholder="Time">
+                                </div>
+                            </div>
+                            <!---------------------------------Reserve Button---------------------------------------->
+                            <div class="form-group row">
+                                <div class="offset-sm-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-----------------Tables (Facts and Figure Section)---------------------------->
+
+
+        <div class="row row-content">
+            <div class="col-12 offset-sm-2 col-sm-8 align-items-centers">
+                <div class="card">
+                    <h1 class="btn btn-warning text-white">Facts &amp; Figures</h1>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>2013</th>
+                                    <th>2014</th>
+                                    <th>2015</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Employees</th>
+                                    <td>15</td>
+                                    <td>30</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <th>Guests Served</th>
+                                    <td>15000</td>
+                                    <td>45000</td>
+                                    <td>100,000</td>
+                                </tr>
+                                <tr>
+                                    <th>Special Events</th>
+                                    <td>3</td>
+                                    <td>20</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <th>Annual Turnover</th>
+                                    <td>$251,325</td>
+                                    <td>$1,250,375</td>
+                                    <td>~$3,000,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-12 col-sm-3"></div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------------->
+
+
+
+
+    <!-------------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-4 offset-1 col-sm-2 align-self-center">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./new.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5 align-self-center">
+                    <h5>Our Address</h5>
+                    <address>
+                        122,Clear Water Bay Road<br>
+                        Claer Water Bay,Kowloon<br>
+                        Seoul<br>
+                        <i class="fa fa-phone fa-lg"></i> : +876 5679 3452<br>
+                        <i class="fa fa-fax fa-lg"></i> : +765 9876 5643<br>
+                        <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:confusion@bts.net">Contact us at</a>
+                    </address>
+                </div>
+
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="mailto:confusion@bts.net"><i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="mailto:confusion@bts.net"><i
+                                class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="mailto:confusion@bts.net"><i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="mailto:confusion@bts.net"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="mailto:confusion@bts.net"><i
+                                class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:confusion@bts.net"><i
+                                class="fa fa-envelope-open fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-header justify-content-center">
+                <div class="col-auto">
+                    <p>@ Copyright 2015 BTS</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
